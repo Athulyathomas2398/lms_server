@@ -8,13 +8,13 @@ require('./db/connection')
 
 //instance
 const lmsServer=express()
-// lmsServer.use(cors())
-lmsServer.use(cors({
-    origin: "http://localhost:5174",  // Allow frontend requests
-    methods: "GET, POST, PUT, DELETE",
-    allowedHeaders: "Content-Type, Authorization", // Allow sending Authorization header
-    credentials: true // Allow cookies and authentication headers
-}));
+lmsServer.use(cors())
+// lmsServer.use(cors({
+//     origin: "http://localhost:5174",  // Allow frontend requests
+//     methods: "GET, POST, PUT, DELETE",
+//     allowedHeaders: "Content-Type, Authorization", // Allow sending Authorization header
+//     credentials: true // Allow cookies and authentication headers
+// }));
 
 
 
